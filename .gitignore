@@ -28,3 +28,11 @@ external/gscam2/
 
 # untracked
 untracked/
+rosbags/explore_21_06_11_30/explore_21_06_11_30_0.mcap
+rosbags/explore_21_06_11_30_v2/explore_21_06_11_30_v2_0.mcap
+rosbags/explore_21_06_11_30/metadata.yaml
+rosbags/explore_21_06_11_30_v2/metadata.yaml
+rosbags/mon_nav_dlio_2/metadata.yaml
+rosbags/mon_nav_dlio_2/mon_nav_dlio_2_0.mcap
+rosbags/mon_nav_dlio_3/metadata.yaml
+rosbags/mon_nav_dlio_3/mon_nav_dlio_3_0.mcap
