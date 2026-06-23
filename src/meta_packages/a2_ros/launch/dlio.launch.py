@@ -72,7 +72,7 @@ def generate_launch_description():
                 'dynamic_filter/enabled': ParameterValue(dynamic_filter_enabled, value_type=bool),
                 'dynamic_filter/max_range': ParameterValue(dynamic_filter_max_range, value_type=float),
                 'dynamic_filter/force_removed_cloud_output': False,
-                'map/save_dynamic_removed/enabled': False,
+                'map/save_dynamic_removed/enabled': True,
                 'run_stats/enabled': False,
                 'run_stats/plot_on_shutdown': False,
             },

@@ -65,8 +65,8 @@ def generate_launch_description():
             name='terrainAnalysis',
             output='screen',
             parameters=[{
-                'scanVoxelSize':       0.05,
-                'decayTime':           10.0,
+                'scanVoxelSize':       0.07, #0.05
+                'decayTime':           4.0, #10.0
                 'noDecayDis':          0.0,
                 'clearingDis':         8.0,
                 'useSorting':          True,
@@ -85,7 +85,7 @@ def generate_launch_description():
                 'noDataObstacle':      False,
                 'noDataBlockSkipNum':  0,
                 'minBlockPointNum':    10,
-                'vehicleHeight':       0.5,
+                'vehicleHeight':       0.8, #0.5
                 'voxelPointUpdateThre': 100,
                 'voxelTimeUpdateThre': 2.0,
                 'minRelZ':             -1.0,
@@ -101,8 +101,8 @@ def generate_launch_description():
             name='terrainAnalysisExt',
             output='screen',
             parameters=[{
-                'scanVoxelSize':        0.1,
-                'decayTime':            10.0,
+                'scanVoxelSize':        0.15, #0.1
+                'decayTime':            10.0, 
                 'noDecayDis':           0.0,
                 'clearingDis':          30.0,
                 'useSorting':           True,
@@ -139,7 +139,7 @@ def generate_launch_description():
                 'useTerrainAnalysis':  True,
                 'checkObstacle':       True,
                 'checkRotObstacle':    True,
-                'adjacentRange':       3.5,
+                'adjacentRange':       3.0, #3.5
                 'obstacleHeightThre':  0.25,
                 'groundHeightThre':    0.1,
                 'costHeightThre':      0.1,
