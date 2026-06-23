@@ -28,6 +28,7 @@ tare_planner_node:
     kKeyposeCloudDwzFilterLeafSize : 0.2 # voxel leaf size for downsampling keypose / registered scan clouds (m)
     kRushHomeDist : 10.0            # distance to home below which rush-home activates (m)
     kAtHomeDistThreshold : 0.5      # distance to consider robot arrived at home (m)
+    kMaxExplorationTime : 900.0     # abandon remaining exploration and head home after this many seconds (<= 0 disables)
     kTerrainCollisionThreshold : 0.3     # terrain point intensity above this is treated as a collision obstacle
     kLookAheadDistance : 5.0        # distance ahead on path to project lookahead waypoint (m)
     kUseMomentum : false            # bias waypoint selection toward previous travel direction
