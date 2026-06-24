@@ -37,3 +37,9 @@ rosbags/mon_nav_dlio_2/mon_nav_dlio_2_0.mcap
 rosbags/mon_nav_dlio_3/metadata.yaml
 rosbags/mon_nav_dlio_3/mon_nav_dlio_3_0.mcap
 scripts/check_cloud_quality.py
+rosbags/new_dlio_2/metadata.yaml
+rosbags/new_dlio_2/tu_dlio_explore_1_0.mcap
+rosbags/tu_dlio_data_1/metadata.yaml
+rosbags/tu_dlio_data_1/tu_dlio_data_1_0.mcap
+rosbags/explore_maze/metadata.yaml
+rosbags/explore_maze/tu_dlio_explore_maze_0.mcap
