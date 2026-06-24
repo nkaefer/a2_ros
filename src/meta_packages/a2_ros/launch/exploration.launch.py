@@ -41,7 +41,7 @@ def generate_launch_description():
     description_dir = get_package_share_directory('a2_description')
     a2_ros_dir      = get_package_share_directory('a2_ros')
     rviz_path        = os.path.join(a2_ros_dir, 'rviz', 'exploration.rviz')
-    tare_config      = os.path.join(a2_ros_dir, 'config', 'autonomy', 'tare_a2.yaml')
+    tare_config      = os.path.join(a2_ros_dir, 'config', 'autonomy', 'matterport.yaml')
 
     rviz_arg = DeclareLaunchArgument(
         'rviz',
@@ -124,7 +124,7 @@ def generate_launch_description():
             parameters=[{
                 'pathFolder':          get_package_share_directory('local_planner') + '/paths',
                 'vehicleLength':       0.8,#0.65,
-                'vehicleWidth':        0.4, #0.40,
+                'vehicleWidth':        0.6, #0.40,
                 'sensorOffsetX':       0.0,
                 'sensorOffsetY':       0.0,
                 'twoWayDrive':         False,
@@ -142,16 +142,16 @@ def generate_launch_description():
                 'pointPerPathThre':    5, #2,
                 'minRelZ':             -0.5,
                 'maxRelZ':             0.8,
-                'maxSpeed':            1.5, #0.8,
+                'maxSpeed':            1.2, #0.8,
                 'dirWeight':           0.1,
                 'dirThre':             90.0,
                 'dirToVehicle':        False,
-                'pathScale':           1.0,
-                'minPathScale':        0.75,
+                'pathScale':           1.0, #1.0,
+                'minPathScale':        0.4,
                 'pathScaleStep':       0.25,
-                'pathScaleBySpeed':    True,
-                'minPathRange':        0.6, #1.3,#1.0,
-                'pathRangeStep':       0.2, #0.5,
+                'pathScaleBySpeed':    False, #True,
+                'minPathRange':        0.4, #1.3,#1.0,
+                'pathRangeStep':       0.1, #0.5,
                 'pathRangeBySpeed':    True,
                 'pathCropByGoal':      True,
                 'autonomyMode':        True,
@@ -178,8 +178,8 @@ def generate_launch_description():
                 'yawRateGain':      4.0,
                 'stopYawRateGain':  5.0,
                 'maxYawRate':       30.0,
-                'maxSpeed':         1.5, #0.8,
-                'maxAccel':         1.0,
+                'maxSpeed':         1.2, #0.8,
+                'maxAccel':         0.5, #1.0,
                 'switchTimeThre':   1.0,
                 'dirDiffThre':      0.1,
                 'stopDisThre':      0.3,

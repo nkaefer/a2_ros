@@ -93,7 +93,7 @@ tare_planner_node:
     kCheckDynamicObstacleCollision : false  # check collision against recent obstacle frames (for dynamic envs)
     kCollisionFrameCountMax : 3             # history frames used for dynamic obstacle collision check
 
-    kSensorRange : 15.0 #10.0          # max range used for coverage calculations — matches lidar cutoff (m)
+    kSensorRange : 5.0 #10.0          # max range used for coverage calculations — matches lidar cutoff (m)
     kNeighborRange : 2.5         # search radius for viewpoint connectivity (m)
     kCoverageOcclusionThr : 0.3  # distance threshold for occlusion in coverage calculation (m)
     kCoverageDilationRadius : 0.2 #0.8  # dilation radius applied to covered area (m)
